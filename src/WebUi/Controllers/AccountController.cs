@@ -59,7 +59,7 @@ namespace WebUi.Controllers
 
             if (user != null)
             {
-                userInfo.UserRoles = string.Join(",", user.Roles.Select(iur => iur.Role.Name));
+                userInfo.UserRoles = string.Join(",", "X");//user.Roles.Select(iur => iur.Role.Name));
             }
 
             return userInfo;

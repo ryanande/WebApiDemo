@@ -93,7 +93,7 @@ namespace WebUi.Providers
 
         public static AuthenticationProperties CreateProperties(IdentityUser user)
         {
-            var roles = string.Join(",", user.Roles.Select(iur => iur.Role.Name));
+            var roles = string.Join(",", "x");// user.Roles.Select(iur => iur.Role.Name));
 
             IDictionary<string, string> data = new Dictionary<string, string>
             {
